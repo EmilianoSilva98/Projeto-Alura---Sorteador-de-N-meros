@@ -3,17 +3,17 @@ function sortear (){
     let de = parseInt(document.getElementById ('de').value);
     let ate = parseInt(document.getElementById ('ate').value);
 
-    if (de == 0) {
-        alert('Número igual a 0. Verifique!');
+    if (isNaN(quantidade) || quantidade <= 0) {
+        alert("Insira uma quantidade válida.");
         return;
     }
-    if (ate == 0) {
-        alert('Número igual a 0. Verifique!');
+    if (isNaN(de) || de <= 0) {
+        alert("Insira uma quantidade válida.");
         return;
     }
-    if (quantidade == 0) {
-            alert('Número igual a 0. Verifique!');
-            return;
+    if (isNaN(ate) || ate <= 0) {
+        alert("Insira uma quantidade válida.");
+        return;
     }
 
     if (de >= ate) {
